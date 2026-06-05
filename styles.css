@@ -1293,3 +1293,105 @@ img {
   font-weight: 700;
 }
 
+/* â€”â€”â€” Pricing + testimonials â€”â€”â€” */
+.pricing-section {
+  background: #0e0a08;
+  padding: clamp(56px, 9vw, 96px) 0 clamp(48px, 7vw, 80px);
+}
+.pricing-heading {
+  text-align: center;
+  margin: 0 0 12px;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3.2vw, 2.25rem);
+  color: var(--text-light);
+}
+.pricing-sub {
+  text-align: center;
+  margin: 0 0 40px;
+  color: var(--text-muted-dark);
+  font-size: 1rem;
+}
+.plans-grid--dark {
+  margin-bottom: clamp(48px, 8vw, 72px);
+}
+.plan-card--dark {
+  background: #16110e;
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-light);
+}
+.plan-card--dark .plan-name {
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted-dark);
+}
+.plan-first {
+  margin: 0 0 8px;
+  font-size: 1.75rem;
+  color: var(--text-light);
+}
+.plan-first strong {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+.plan-first span {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted-dark);
+}
+.plan-recur {
+  margin: 0 0 16px;
+  font-size: 0.9rem;
+  color: var(--text-muted-dark);
+}
+.plan-fine {
+  margin: 0 0 24px;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.55);
+  flex-grow: 1;
+}
+.plan-card--featured-dark {
+  border: 2px solid var(--accent);
+  transform: translateY(-6px);
+}
+.plan-card--dark .btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.35);
+  color: var(--text-light);
+}
+.plan-card--dark .btn-outline-light:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+@media (max-width: 700px) {
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+}
+.quote-card {
+  margin: 0;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+}
+.quote-card blockquote {
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--text-muted-dark);
+  font-style: normal;
+}
+.quote-card figcaption {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 600;
+}
+
