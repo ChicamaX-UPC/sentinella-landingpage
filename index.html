@@ -15,3 +15,34 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="site-header" id="inicio">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Sentinella home">
+        <span class="brand-text">Sentinella</span>
+      </a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="is-active" data-i18n="nav.start">Start</a></li>
+          <li><a href="#features" data-i18n="nav.features">Features</a></li>
+          <li><a href="#benefits" data-i18n="nav.benefits">Benefits</a></li>
+          <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="header-actions">
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" class="lang-btn is-active" data-lang-btn="en" aria-pressed="true">EN</button>
+            <span class="lang-sep" aria-hidden="true">|</span>
+            <button type="button" class="lang-btn" data-lang-btn="es" aria-pressed="false">ES</button>
+          </div>
+          <a class="btn btn-primary btn-pill btn-nav" href="#contact" data-i18n="nav.requestDemo">Request demo</a>
+        </div>
+      </nav>
+    </div>
+  </header>
