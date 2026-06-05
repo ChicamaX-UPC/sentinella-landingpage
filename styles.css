@@ -597,3 +597,104 @@ img {
   color: var(--text-muted-dark);
 }
 
+/* ---------- How it works ---------- */
+.how-section {
+  background: var(--bg-light);
+  padding: clamp(56px, 9vw, 96px) 0 0;
+}
+
+.how-card {
+  background: var(--bg-light);
+  border: 1.5px dashed #6FA9DC;
+  border-radius: var(--radius);
+  padding: clamp(32px, 5vw, 56px) clamp(20px, 4vw, 48px);
+}
+
+.how-header {
+  text-align: center;
+  margin-bottom: clamp(32px, 5vw, 56px);
+}
+
+.section-title-light {
+  margin: 0 0 12px;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: -0.02em;
+  color: var(--text-dark);
+}
+
+.section-subtitle-light {
+  margin: 0;
+  color: var(--text-muted-light);
+  font-size: 1rem;
+}
+
+.how-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  position: relative;
+}
+
+@media (min-width: 760px) {
+  .how-steps::before {
+    content: "";
+    position: absolute;
+    left: 16.66%;
+    right: 16.66%;
+    top: 30px;
+    height: 1px;
+    background: #CBD5E1;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .how-steps {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.how-step {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.how-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--text-dark);
+  margin-bottom: 18px;
+  box-shadow: 0 0 0 8px var(--bg-light);
+}
+
+.how-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.how-step-title {
+  margin: 0 0 8px;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.how-step-text {
+  margin: 0 auto;
+  max-width: 28ch;
+  font-size: 0.9375rem;
+  color: var(--text-muted-light);
+  line-height: 1.55;
+}
+
