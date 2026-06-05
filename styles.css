@@ -1483,3 +1483,33 @@ img {
   color: #8cf5d0;
 }
 
+/* Footer: barra tres columnas */
+.footer-inner {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-copy {
+  margin: 0;
+  flex: 1 1 100%;
+  text-align: center;
+  order: 3;
+}
+@media (min-width: 800px) {
+  .footer-copy {
+    flex: 0 1 auto;
+    order: 0;
+    text-align: right;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-nav .header-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  .main-nav .lang-switch {
+    justify-content: center;
+  }
+}
