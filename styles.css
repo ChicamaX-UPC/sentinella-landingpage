@@ -698,3 +698,125 @@ img {
   line-height: 1.55;
 }
 
+/* ---------- Plans ---------- */
+.plans-section {
+  background: var(--bg-light);
+  padding: clamp(56px, 9vw, 96px) 0 clamp(64px, 10vw, 112px);
+}
+
+.plans-section .section-title-light {
+  margin-bottom: 56px;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .plans-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin-inline: auto;
+  }
+}
+
+.plan-card {
+  position: relative;
+  background: var(--bg-card-light);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 36px 28px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-card--featured {
+  border: 2px solid var(--accent);
+  box-shadow: 0 14px 38px rgba(15, 27, 45, 0.08);
+  transform: translateY(-8px);
+}
+
+@media (max-width: 900px) {
+  .plan-card--featured {
+    transform: none;
+  }
+}
+
+.plan-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: var(--text-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+
+.plan-tier {
+  margin: 0 0 16px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--text-muted-light);
+}
+
+.plan-price {
+  margin: 0 0 24px;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  color: var(--text-dark);
+}
+
+.plan-price strong {
+  font-size: clamp(1.875rem, 3.4vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.plan-price-suffix {
+  font-size: 0.9375rem;
+  color: var(--text-muted-light);
+  font-weight: 500;
+}
+
+.plan-features {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex-grow: 1;
+}
+
+.plan-features li {
+  position: relative;
+  padding-left: 28px;
+  font-size: 0.9375rem;
+  color: var(--text-dark);
+}
+
+.plan-features li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
