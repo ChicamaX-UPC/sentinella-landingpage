@@ -820,3 +820,34 @@ img {
   background-position: center;
 }
 
+/* ---------- Final CTA ---------- */
+.cta-section {
+  background: var(--bg-navy);
+  padding: clamp(64px, 10vw, 112px) 0;
+  text-align: center;
+}
+
+.cta-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-title {
+  margin: 0 0 24px;
+  font-weight: 800;
+  font-size: clamp(1.875rem, 4.6vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  color: var(--text-light);
+  max-width: 22ch;
+}
+
+.cta-text {
+  margin: 0 0 40px;
+  color: var(--text-muted-dark);
+  font-size: clamp(0.9375rem, 1.4vw, 1.0625rem);
+  line-height: 1.6;
+  max-width: 60ch;
+}
+
