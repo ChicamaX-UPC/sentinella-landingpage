@@ -243,3 +243,33 @@
       </div>
     </section>
 
+    <!-- Contact -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <h2 id="contact-title" class="contact-title" data-i18n="contact.title">Request a demonstration</h2>
+        <p class="contact-sub" data-i18n="contact.subtitle">Fill out the form below and our sales team will contact you within 24 hours.</p>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="contact-row">
+            <label class="contact-field">
+              <span class="contact-label" data-i18n="contact.name">Name</span>
+              <input type="text" name="name" autocomplete="name" placeholder="Jane Doe" data-i18n-placeholder="contact.phName" required />
+            </label>
+            <label class="contact-field">
+              <span class="contact-label" data-i18n="contact.company">Company</span>
+              <input type="text" name="company" autocomplete="organization" placeholder="Acme Inc." data-i18n-placeholder="contact.phCo" required />
+            </label>
+          </div>
+          <label class="contact-field">
+            <span class="contact-label" data-i18n="contact.mail">Email</span>
+            <input type="email" name="email" autocomplete="email" placeholder="jane@acme.com" data-i18n-placeholder="contact.phMail" required />
+          </label>
+          <label class="contact-field">
+            <span class="contact-label" data-i18n="contact.msg">Message</span>
+            <textarea name="msg" rows="4" placeholder="Briefly describe your use caseâ€¦" data-i18n-placeholder="contact.phMsg" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block contact-submit" data-i18n="contact.submit">Submit request</button>
+          <p class="form-feedback" id="formFeedback" hidden role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
