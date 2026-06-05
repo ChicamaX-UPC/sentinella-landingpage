@@ -490,3 +490,110 @@ img {
   color: var(--text-muted-dark);
 }
 
+/* ---------- Capabilities ---------- */
+.capabilities-section {
+  background: var(--bg-black);
+  padding: clamp(56px, 9vw, 100px) 0 clamp(64px, 10vw, 120px);
+}
+.cap-main-title {
+  margin: 0 0 16px;
+  text-align: center;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3.2vw, 2.25rem);
+  letter-spacing: -0.02em;
+  color: var(--text-light);
+}
+.cap-main-title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+  margin: 16px auto 0;
+}
+.cap-main-sub {
+  margin: 0 auto 48px;
+  text-align: center;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.55;
+  max-width: 42rem;
+  color: var(--text-muted-dark);
+}
+
+.section-title-dark {
+  position: relative;
+  margin: 0 0 56px;
+  text-align: center;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3.4vw, 2.25rem);
+  letter-spacing: -0.02em;
+  color: var(--text-light);
+}
+
+.title-underline {
+  display: block;
+  width: 64px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+  margin: 16px auto 0;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .capabilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 580px) {
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.capability-card {
+  background: var(--bg-card-dark);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius);
+  padding: 28px 26px;
+  transition: border-color 0.2s var(--ease), transform 0.2s var(--ease);
+}
+
+.capability-card:hover {
+  border-color: rgba(255, 140, 66, 0.35);
+  transform: translateY(-2px);
+}
+
+.capability-icon {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+.capability-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.capability-title {
+  margin: 0 0 8px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text-light);
+}
+
+.capability-text {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--text-muted-dark);
+}
+
